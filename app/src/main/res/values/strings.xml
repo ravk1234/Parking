@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Parking</string>
+    <!--<string name="sign_up">Don’t have an account? Sign up</string>-->
+    <string name="register">Already  have an account? <u>Login</u></string>
+</resources>

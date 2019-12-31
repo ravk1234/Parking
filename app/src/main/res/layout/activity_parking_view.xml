@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkingViewActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+
+        <ImageButton
+            android:id="@+id/backToMain"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_arrow_back" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_settings_black_24dp" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:text="SELECTED"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/gilroysemibold"
+                android:textColor="#d5e8fe"
+                android:letterSpacing="0.2"/>
+
+
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Mall of India"
+                android:layout_below="@+id/text1"
+                android:fontFamily="@font/gilroymedium"
+                android:textColor="#e9b01d"
+                android:layout_marginLeft="15dp"
+                android:textSize="30sp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/first_floor_card"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location_text"
+                android:background="@drawable/button_bg_rounded_corners"
+                >
+
+                <TextView
+                    android:id="@+id/first_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="1st Floor"
+                    android:textSize="22sp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="30dp"
+                    android:fontFamily="@font/gilroysemibold"
+                    android:paddingTop="10dp"
+                    android:textColor="#050607"
+                    />
+
+                <TextView
+                    android:id="@+id/free_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first_floor"
+                    android:layout_marginTop="-39dp"
+                    android:fontFamily="@font/gilroymedium"
+                    android:text="Free - 4/10"
+                    android:textColor="#050607"
+                    android:textSize="14sp"
+                    android:paddingLeft="28dp"
+                    android:gravity="center"/>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/first_floor_card"
+                android:layout_below="@+id/location_text"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/rounded_layout3"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/second_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="2nd Floor"
+                    android:textSize="22sp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="30dp"
+                    android:textColor="#d6e9ff"
+                    android:fontFamily="@font/gilroysemibold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/free_space2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/second_floor"
+                    android:layout_marginTop="-39dp"
+                    android:fontFamily="@font/gilroymedium"
+                    android:text="Free - 4/10"
+                    android:textSize="14sp"
+                    android:textColor="#d6e9ff"
+                    android:paddingLeft="28dp"
+                    android:gravity="center"/>
+                
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:background="#050505"
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/entry_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:letterSpacing="0.2"
+                android:text="ENTRY"
+                android:textColor="#e9b01d"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/downward_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/entry_text"
+                android:layout_marginStart="22dp"
+
+                android:src="@drawable/ic_arrow_downward_black_24dp" />
+
+            <View
+                android:id="@+id/dotted4"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/downward_arrow"
+                android:layout_marginStart="33dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/dotted_line2" />
+
+            <TextView
+                android:id="@+id/exit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="390dp"
+                android:layout_marginBottom="1dp"
+                android:text="EXIT"
+                android:letterSpacing="0.2"
+                android:textColor="#e9b01d"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="390dp"
+
+                android:layout_toRightOf="@+id/exit_text"
+                android:background="@drawable/ic_arrow_forward_blue_24dp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/border_layout"
+                android:text="A101"
+                android:textColor="#e9b01d"
+
+                />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/border_layout"
+                android:text="A102"
+                android:layout_toRightOf="@id/button1"
+                android:textColor="#e9b01d"
+
+                />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border_layout"
+                android:text="B101"
+                android:layout_below="@id/button1"
+                android:textColor="#e9b01d"
+
+                />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/border_layout"
+                android:text="B102"
+                android:layout_toRightOf="@id/button3"
+                android:layout_below="@id/button1"
+                android:textColor="#e9b01d"
+
+                />
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="15dp"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:drawableTop="@drawable/ic_arrow_forward_black_24dp"
+                android:paddingTop="18dp" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

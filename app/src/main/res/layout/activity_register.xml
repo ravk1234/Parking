@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="399dp"
+        android:layout_height="95dp"
+        android:src="@mipmap/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="#d6e9ff"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/register_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_text"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="133dp"
+        android:text="Please enter login details for your Parking account"
+        android:fontFamily="@font/gilroymedium"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:textColor="#456d9b" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/linear_layout2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Space android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/register_firstname"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/linear_layout1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#d6e9ff"
+            android:ems="10"
+            android:fontFamily="@font/gilroymedium"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="29.3sp"
+            android:paddingBottom="20dp"
+            android:textColor="#d6e9ff"
+            android:textColorHint="#d6e9ff" />
+
+            <Space android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/register_lastname"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linear_layout1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#d6e9ff"
+            android:textColor="#d6e9ff"
+            android:ems="10"
+            android:fontFamily="@font/gilroymedium"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:paddingBottom="20dp"
+            android:textColorHint="#d6e9ff" />
+
+        <Space android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_above="@id/register_btn"
+        android:layout_marginBottom="50dp"
+        android:layout_height="122dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#d6e9ff"
+            android:ems="10"
+            android:fontFamily="@font/gilroymedium"
+            android:hint="Email address"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="29.3sp"
+            android:paddingBottom="20dp"
+
+            android:textColor="#d6e9ff"
+            android:textColorHint="#d6e9ff" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:fontFamily="@font/gilroymedium"
+        android:inputType="textPassword"
+        android:hint="New Password"
+        android:textColor="#d6e9ff"
+        android:backgroundTint="#d6e9ff"
+        android:textColorHint="#d6e9ff"
+        android:paddingBottom="20dp"
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="300dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Register"
+        android:letterSpacing="0.2"
+        android:fontFamily="@font/gilroy_semibold"
+        android:textColor="#050607"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/register_text3"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@+id/login_btn"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="541dp"
+        android:layout_marginBottom="-46dp"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="#d6e9ff"
+        android:textSize="20sp"
+        android:fontFamily="@font/gilroymedium"/>
+
+</RelativeLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlotActivity"
+    android:orientation="vertical"
+    android:background="#15548d"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:id="@+id/backToMain"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_arrow_back" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_settings_black_24dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_weight="0.5"
+        android:background="#15548d"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/text_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Payment"
+                android:fontFamily="@font/gilroymedium"
+                android:textColor="#e9b01d"
+                android:layout_marginLeft="15dp"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/slot_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_payment"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Slot No"
+                android:textColor="#d5e8fe"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_payment"
+                android:layout_toRightOf="@id/slot_payment"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Location"
+                android:textColor="#5b80ab"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/vehicle_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/slot_payment"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Vehicle"
+                android:textColor="#5b80ab"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dot"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_alignBaseline="@id/vehicle_type"
+                android:layout_below="@id/location"
+                android:layout_marginTop="26dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/vehicle_type"/>
+
+            <TextView
+                android:id="@+id/vehicle_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/slot_payment"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/dotted"
+                android:layout_marginEnd="5dp"
+                android:textColor="#5b80ab"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vehicle_type"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:text="Duration"
+                android:textColor="#5b80ab"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/dotted"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_alignBaseline="@id/duration"
+                android:layout_below="@id/location"
+                android:layout_marginTop="26dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/vehicle_type"/>
+
+
+            <TextView
+                android:id="@+id/parking_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vehicle_cost"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+
+                android:layout_toRightOf="@+id/dotted"
+                android:layout_marginRight="5dp"
+                android:textColor="#5b80ab"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/total_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/duration"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:text="Total Cost"
+                android:textColor="#5b80ab"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dott"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_alignBaseline="@id/total_cost"
+                android:layout_below="@id/location"
+                android:layout_marginTop="26dp"
+
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/vehicle_type"/>
+
+
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/parking_time"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/dotted"
+                android:textColor="#5b80ab"
+                android:textSize="24sp" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:background="@drawable/payment_gradient"
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/payment_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_layout">
+
+                <TextView
+                    android:id="@+id/person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="John Doe"
+                    android:textColor="#d5e8fe"
+                    android:textSize="32sp"
+                    />
+
+                <TextView
+                    android:id="@+id/email_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/person_name"
+                    android:paddingLeft="20dp"
+                    android:text="johndoe123@gmail.com"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/joining_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email_text"
+                    android:layout_marginTop="30dp"
+                    android:paddingLeft="20dp"
+                    android:text="Added on 15/10/2019"
+
+                    />
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/joining_date" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_below="@id/payment_info"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_layout2">
+
+                <ImageButton
+                    android:id="@+id/add_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignBottom="@id/add_button"
+                    android:background="@drawable/addbutton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toEndOf="@id/add_button"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:text="Add New Account"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                android:fontFamily="@font/gilroy_semibold"
+                android:gravity="left"
+                android:letterSpacing="0.2"
+                android:paddingLeft="17dp"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:text="Pay Now"
+                android:textAllCaps="false"
+                android:textColor="#050607"
+                android:textSize="20sp"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

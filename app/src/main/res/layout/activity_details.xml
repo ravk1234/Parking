@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F304092C"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:weightSum="2"
+       android:layout_marginHorizontal="10dp"
+       android:id="@+id/ll1"
+       android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:layout_height="70dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:weightSum="2"
+           android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Vehicle Type:"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+           <EditText
+            android:layout_width="0dp"
+               android:id="@+id/vid"
+               android:textColor="#FFF"
+               android:textColorHint="#948C8C"
+               android:textSize="20dp"
+               android:hint="Bike/Car"
+               android:gravity="center"
+               android:background="#6D8B8484"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_marginTop="5dp"
+           android:weightSum="2"
+
+           android:layout_weight="1">
+           <TextView
+               android:text="No. of Hours:"
+               android:textSize="20dp"
+               android:gravity="center"
+               android:textColor="#FFF"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"/>
+           <EditText
+               android:layout_width="0dp"
+               android:textColor="#FFF"
+               android:textSize="20dp"
+               android:gravity="center"
+               android:inputType="number"
+               android:background="#6D8B8484"
+android:id="@+id/hid"
+               android:layout_height="match_parent"
+               android:layout_weight="1"/>
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:id="@+id/next"
+        android:layout_below="@id/ll1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="207dp"
+        android:background="#1E88E5"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="#FFF"
+        android:textSize="25dp" />
+
+</RelativeLayout>

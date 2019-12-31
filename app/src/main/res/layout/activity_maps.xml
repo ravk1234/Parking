@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <TextView
+        android:id="@+id/search_text"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Where are you headed to?"
+        android:textColor="#d6e9ff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:textColor="#d6e9ff"
+
+
+        />
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_text"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="25dp"
+        app:iconifiedByDefault="false"
+        android:textColor="#d6e9ff"
+        app:queryHint="Search...">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search"/>
+
+</RelativeLayout>

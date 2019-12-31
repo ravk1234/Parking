@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_foreground"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome back"
+        android:textColor="#d6e9ff"
+        android:textSize="40sp"
+        android:layout_marginTop="140dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="133dp"
+        android:text="Please enter login details for your Parking account"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="#d6e9ff" />
+
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#456d9b"
+            android:ems="10"
+            android:hint="Email address"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="29.3sp"
+            android:textColor="#d6e9ff"
+            android:textColorHint="#456d9b"
+            android:paddingBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColor="#d6e9ff"
+            android:backgroundTint="#456d9b"
+            android:textColorHint="#456d9b"
+            android:paddingBottom="20dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="374dp"
+        android:layout_height="61dp"
+android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:fontFamily="@font/gilroy_semibold"
+        android:letterSpacing="0.2"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Login"
+        android:textColor="#050607"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sign_up_text"
+        android:layout_width="287dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/login_btn"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="484dp"
+        android:layout_marginBottom="-51dp"
+        android:fontFamily="@font/gilroymedium"
+        android:text="Don’t have an account? Sign up"
+        android:textAlignment="center"
+        android:textColor="#d6e9ff"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>
