@@ -8,3 +8,7 @@ Enables users to book parking spots. Once the user books the spot , the informat
  <img src="https://raw.githubusercontent.com/ravk1234/Parking/master/map.jpg" height="340" width="140"/>
    <img src="https://raw.githubusercontent.com/ravk1234/Parking/master/parkinglot.jpg" height="340" width="140"/>
 </p>
+
+## Features
+* Register using your email and easily book parking slots.
+* 
