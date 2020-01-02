@@ -11,4 +11,4 @@ Enables users to book parking spots. Once the user books the spot , the informat
 
 ## Features
 * Register using your email and easily book parking slots.
-* 
+* Find nearest parking slot using Google Maps.
