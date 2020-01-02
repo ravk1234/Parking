@@ -4,9 +4,9 @@ Enables users to book parking spots. Once the user books the spot , the informat
 ## Screenshots
 
 <p align="center">
-   <img src="https://raw.githubusercontent.com/ravk1234/Parking/master/Screenshots/register.jpg" height="340" width="140"/>
-  <img src="https://raw.githubusercontent.com/ravk1234/Parking/master/login.jpg" height="340" width="140"/>
-  <img src="https://raw.githubusercontent.com/ravk1234/Parking/master/parkinglot.jpg" height="340" width="140"/>
+   <img src="https://raw.githubusercontent.com/ravk1234/Parking/master/Screenshots/register.jpg" height="400" width="200"/>
+  <img src="https://raw.githubusercontent.com/ravk1234/Parking/master/login.jpg" height="400" width="200"/>
+  <img src="https://raw.githubusercontent.com/ravk1234/Parking/master/parkinglot.jpg" height="400" width="200"/>
 </p>
 
 <p align="center">
